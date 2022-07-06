@@ -4,21 +4,21 @@ const mysql = require('mysql')
 const bcrypt = require('bcryptjs')
 const multer = require('multer')
 const cors = require('cors')
-/* const db = mysql.createPool({
+const db = mysql.createPool({
   host: "207.180.243.8",
   user: "sc34mpr_adminSCMP",
   password: "db@SqlSCMP2021",
   database: "sc34mpr_SCMP",
   dateStrings: true,
-}); */
-const db = mysql.createPool({
+});
+/* const db = mysql.createPool({
   host: "localhost",
   user: "adminSCMP",
   password: "db@SqlSCMP2021",
   database: "sc34mpr_scmp",
   dateStrings: true,
   
-});
+}); */
 function routes(app) {
   function byDate(a, b) {
     return new Date(b.EDate).valueOf() - new Date(a.EDate).valueOf();
