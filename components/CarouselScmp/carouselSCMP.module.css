@@ -1,0 +1,84 @@
+.img{
+    object-fit: cover;
+    width: 100%;
+}
+/* display: block;
+width: 50vw;
+max-width: 177.78vh;
+// 16/9 = 1.778 
+height: 56.25vw;
+ //height:width ratio = 9/16 = .5625  
+max-height: 50vh;
+object-fit: scale-down;
+background-color: #f6cfaa; */
+.ImgCont{
+    width: 100%;
+    height: 33vw ;
+    object-fit: cover;
+    position: relative;
+  
+  }
+.bodyWidth{
+    width:95%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+  @media(max-width:1215px){
+   .ImgCont{
+    height: 33vw !important;
+   }
+    .img{
+   
+            width: 100%;
+
+
+            object-fit: cover;
+          
+    }
+
+}
+
+@media (max-width:890px){
+
+    .ImgCont{
+        height: 30vw!important;
+    }
+  }
+  @media (max-width:790px){
+    .bodyWidth{
+        width: 100%;
+    }
+    .ImgCont{
+        height: 40vw!important;
+    }
+  }
+  @media (max-width:576px){
+  
+    .ImgCont{
+        object-fit: cover;
+        width: 100%;
+        height: 45vw!important;
+    }
+    
+}
+@media(max-width:550px){
+      .bodyWidth{
+          width: 100%;
+      }
+      .ImgCont{
+        height: 45vw!important;
+    }
+  }
+  
+  
+
+
+@media (max-width:450px){
+    .bodyWidth{
+        width: 100%;
+    }
+    .ImgCont{
+        height: 60vw!important;
+    }
+  }

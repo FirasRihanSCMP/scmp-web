@@ -5,6 +5,28 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+a{
+  text-decoration: none !important
+}
+iframe{
+  width: 100%;
+  height: 34vw;
+}
+@media (max-width:890px){
+
+  iframe{
+      width: 100%;
+      height: 40vw;
+  }
+}
+@media (max-width:560px){
+
+  iframe{
+      width: 100%;
+      height: 50vw;
+  }
+}
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 a {
   color: inherit;
@@ -13,4 +35,40 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@font-face {
+ 
+  src: url( "./fonts/Mont.otf"); 
+    font-family:"mont";
+}
+
+@font-face {
+font-family:'simplicity' ;
+src: url(fonts/simplicity.ttf);
+}
+@font-face {
+src: url("fonts/LEMONMILK-Light.otf");
+font-family: "lemon";
+}
+
+@font-face {
+  src: url("fonts/LEMONMILK-Regular.otf");
+  font-family: "lemon2";
+}
+@font-face {
+  src: url("fonts/Almarai.ttf");
+  font-family: "Almarai";
+}
+@font-face {
+
+  src: url( "./fonts/BebasNeue-Regular.otf"); 
+    font-family:"bebas";
+}
+@font-face {
+font-family: "coolvetica";
+src: url("./fonts/coolvetica\ rg.ttf");
+}
+@font-face {
+font-family: "gothic";
+src: url("./fonts/GOTHIC.TTF");
 }

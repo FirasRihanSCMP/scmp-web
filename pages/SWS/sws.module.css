@@ -1,0 +1,184 @@
+.root{
+    width: 50vw;
+    margin: auto;
+}
+.AllPhotos{
+    text-align: center;
+margin-bottom: 5%;
+color: black;
+font-size: larger;
+font-weight: bold;
+}
+.PhotoLink{
+    color: #f7b80a;
+    font-weight: bolder;
+text-decoration: underline !important;
+}
+.PhotoLink:hover{
+    text-decoration: none;
+    color: #898989;
+}
+.oldDate{
+    text-decoration: line-through;
+}
+.newDate{
+    opacity: 1;
+    animation: fade 3s linear infinite;
+    text-align: center;
+    width:50vw;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-family: "Suisse Intl", "Helvetica", "Arial", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    line-height: 45px;
+}
+.carousel-item{
+    height: 80%!important;
+}
+.swsCarousel{
+    width: 90%!important;
+   
+    margin: auto;
+}
+.list .Li::marker{
+    content:"\2192";
+  
+    
+}
+ .Ul .Li {
+    text-align:left !important ;
+}
+/* .ol .li {
+ margin-bottom: 0% ;
+} */
+.Li{
+    margin: 1% 0;
+  }
+  .applyBtnDiv{
+    text-align: center;
+  }
+  .applyBtn{
+      font-family: "Suisse Intl", "Helvetica", "Arial", sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 1%;
+      margin-top: 5%;
+  }
+  
+  .formLink{
+    
+      color: #f7b80a;
+  }
+  .formLink:hover{
+    text-decoration: none;
+    color: #f7b80a;
+}
+.Application{
+    color:#898989;
+    text-decoration-color: #898989;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.formLink:active{
+    text-decoration: none;
+    color: #f7b80a;
+}
+.button{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header{
+    opacity: 1;
+    animation: fade 3s linear infinite;
+    text-align: center;
+    width:50vw;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-family: "Suisse Intl", "Helvetica", "Arial", sans-serif;
+    color: rgb(231, 0, 0);
+    font-weight: 700;
+    line-height: 45px;
+}
+@keyframes fade {
+    0%,100% { opacity: 0 }
+   45%,70%{opacity: 1;}
+    
+  }
+.firstParagraph{
+    font-size: 25px;
+    margin-top: 32px;
+    line-height: 30px;
+    width: 100%;
+    text-align: justify;
+}
+.title1{
+    text-align: center;
+    font-size: 55px;
+    font-family: "Suisse Intl", "Helvetica", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 82.8px;
+}
+.title{
+    font-size: 55px;
+    font-family: "Suisse Intl", "Helvetica", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 82.8px;
+}
+@media(max-width:1215px){
+    .header,.newDate{
+       
+        width:80vw;}
+    .root{
+        width: 80vw;
+    }
+    .swsCarousel{
+        width: 70%!important;
+       
+        margin: auto;
+    }
+}
+@media(max-width:960px){
+    .swsCarousel{
+        width: 95%!important;
+       
+        margin: auto;
+    }
+    .root{
+        width: 90vw;
+        margin: auto;
+    }
+    .title{
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+    .firstParagraph{
+        font-size: 16px;
+        margin-top: 16px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+    .header,.newDate{
+       
+        width:90vw;
+  
+        font-size: 16px;
+     
+        font-weight: 800;
+        line-height: 35px;
+    }
+    .Application{
+        margin: top 3%, !important;;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+    }
+   
+}

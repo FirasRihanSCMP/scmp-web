@@ -1,0 +1,247 @@
+.rootFooter p{    margin-bottom: 0;
+  font-family: 'gothic';
+ z-index: 100 !important;
+color: rgb(223, 223, 223);}
+
+#gmap_canvas{
+    width: 20vw;
+    height: 10vw !important;
+    margin-bottom: 10%;
+}
+
+#facebook{
+    margin-right: 10px;
+    fill: #ffc41d;
+    width: 36px;
+    height: 36px;
+    transition: fill 0.3s ease-in-out,
+
+    
+}
+#facebook:hover{
+    
+    fill: #2c62cf ;    
+    transition: fill 0.3s ease-in-out,
+
+}
+#instagram{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    fill: #ffc41d;
+    transition: fill 0.3s ease-in-out;
+
+}
+#instagram:hover{
+/* fill: url(#InstagramGradient);*/
+fill:#E1306C ;
+transition: fill 0.3s ease-in-out;
+
+   width:40px;
+   height:40px;
+
+}
+#youtube{
+    margin-right: 10px;
+    fill: #ffc41d;
+    width: 40px;
+    height: 40px;
+    transition: fill 0.3s ease-in-out,
+
+}
+#youtube:hover{
+    fill: #FF0000;
+    transition: fill 0.3s ease-in-out,
+
+}
+.socialMedia{
+    text-decoration: none;
+}
+
+@media(max-width:885px){
+.footerCols{
+    font-size: 15px;}
+    #gmap_canvas{
+        width: 35vw;
+        height: 25vw !important;
+    }
+    
+}
+.yellowP{
+    color: #ffc41d!important;
+}   
+.copyrights{
+color: white;
+text-align: center;
+font-family: 'gothic';
+margin-top: 2%;
+} 
+.socialMedia{
+    width:40px;
+margin-bottom: 2%;
+}
+.socialMediaDiv{
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.firstCol{
+   /*  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+}
+.logo{
+    width: 120px;
+}
+.rootFooter{
+    margin-top: 5%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #212529;
+    
+}
+.LinksFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.infoFooter p{margin-bottom: 2%;}
+.LinksFooter{
+    text-decoration: none !important;
+    color: rgb(223, 223, 223) !important;
+    font-family: 'gothic';
+    transition: color .15s ease-in-out;
+    font-weight: 400;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+  /*   &
+    } */
+}
+.col2{
+    margin: auto;
+    margin-top: 0;
+    margin: 0 auto auto;
+    width: fit-content;
+}
+.col3{
+    margin: auto;
+    margin-top: 0;
+    width: fit-content !important;
+
+}
+.scmpfooter{
+    color: #ffc41d !important;
+    font-family: "lemon";
+   font-size: 2.5vw;
+   margin-top: 3%;
+}
+.LinksFooter:hover{
+    text-decoration: none;
+    color:#ffc41d !important;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out;
+}
+.socialMedia{
+    display: inline;
+    padding-left: 0;
+}
+.mainCont{max-width: fit-content}
+@media(max-width:1350px){
+    .scmpfooter{  
+         margin-left:1.5rem;
+    }
+    #gmap_canvas{
+        width: 25vw;
+        height: 15vw !important;
+    }
+}
+@media(max-width:1350px){
+    #gmap_canvas{
+        width: 22vw;
+        height: 15vw !important;
+    }
+}
+@media(max-width:991px){
+    #gmap_canvas{
+        width: 300px;
+        height: 180px !important;
+    }
+    .firstCol{/* text-align: center; */
+        padding-bottom: 5%;
+text-align: center;    }
+        .col2  {
+            margin-left: 3%;
+        }
+        .copyrights{margin-top: 5%;}
+        .scmpfooter{
+            font-size: 40px;
+        }
+}
+@media(max-width:749px){
+
+    
+}
+@media(max-width:821px){
+    .rootFooter{
+        padding-bottom: 2rem;
+        padding-top: 5rem;
+        padding-left: 0%;
+        padding-right: 0%;
+        background-color: #212529;
+        
+    }
+/*     #gmap_canvas{
+        width: 35vw;
+        height: 25vw !important;
+    } */
+    #gmap_canvas{
+        width: 250px;
+        height: 180px !important;
+    }
+}
+@media (max-width:583px){
+   .mainCont{
+       width: 100%!important;
+       max-width: none;
+   }
+   .firstCol{
+       justify-content: center;
+   }
+    .col1, .col2,  .col3, .col4{
+        padding-left: 5%;
+        margin:0;
+    }
+    .scmpfooter{
+        font-size: 40px;
+    }
+    #gmap_canvas{
+        width: 300px;
+        height: 180px !important;
+    }
+}
+@media (max-width:553px){
+.bottomLogo{
+    text-align: center;
+}   
+.logo{width: 110px;}
+.scmpfooter{
+    text-align: center;
+    margin-left: 0;
+    font-size: 2rem;
+
+}}
+.FooterLocation{
+    padding-left: 13%;
+    padding-bottom: 3%;
+}
+@media (max-width:376px){
+    #gmap_canvas{
+        width: 250px;
+        height: 180px !important;
+    }
+
+}

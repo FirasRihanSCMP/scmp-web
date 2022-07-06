@@ -1,0 +1,59 @@
+.AboutUs{
+   
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+}
+.Title{
+    margin-bottom: 8%;
+}
+@media (max-width: 767px) {
+ 
+    .Title{font-size: 5vw!important;}
+} 
+.Title{
+    font-family: 'lemon';
+    font-size: 4vw;
+    text-align: center;
+     } 
+@media (max-width: 450px) {
+
+  /*   .Title{
+        margin-top: 80px;
+    } */
+
+}
+@media (max-width: 575px) {
+    .Title{
+        font-size: 7vw!important;
+    }
+    .AboutUs{
+   
+        width: 95%;}
+    }
+    @media (max-width: 775px) {
+
+        .Title{
+          /*   margin-top: 65px; */
+            font-size:5vw;
+          } 
+    }
+    @media(max-width:1285px){
+        .root{
+            width: 90%;
+        } 
+        .Title{
+        /* 
+            margin-top: 65px; */
+          } 
+    }
+    @media(max-width:1470px){
+        .root{
+            width: 85%;
+        } 
+        .Title{
+        /* 
+            margin-top: 65px; */
+          } 
+    }
+  
