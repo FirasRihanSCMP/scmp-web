@@ -42,18 +42,3 @@ export default function EventsCard(props) {
     </div>
   )
 }
-{/*  <Image
-                                priority
-                                placeholder="blur"
-                                blurDataURL={'/' + props.img}
-                                loading="eager"
-                                src={"/imgs/" + props.img}
-                                className={`d-block w-100 `}
-                                alt=""
-                                layout="fill"
-                            /> */}
-{/*  <LazyLoadImage
-       className={stylesEventCard.cardImage}
-       variant="top"
-       effect='blur'
-       src={"./imgs/" + props.img} /> */}

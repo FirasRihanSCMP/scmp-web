@@ -112,20 +112,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Events(props) {
-    const { 0: EventsLists , 1: setEventsList  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([
-        {
-            t: 1
-        },
-        {
-            t: 2
-        }
-    ]);
-    const { 0: Loaded , 1: setLoaded  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("hi");
+    const { 0: EventsLists , 1: setEventsList  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
+    const { 0: Loaded , 1: setLoaded  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         async function fetchData() {
             await axios__WEBPACK_IMPORTED_MODULE_2___default().get("https://www.scmp-lb.com/api/Events").then((response)=>{
-                setEventsList(response.data);
-                setLoaded(true);
+                if (response.data) {
+                    setEventsList(response.data);
+                    setLoaded(true);
+                }
             }).catch((err)=>{});
         }
         fetchData();
@@ -137,32 +132,29 @@ function Events(props) {
                 title: "Events - Scientific Center For Manufacturing And Production",
                 description: "Events - Scientific Center For Manufacturing And Production"
             }),
-            Loaded ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                children: [
-                    "  ",
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Row, {
-                        className: `g-4 ${(_Departments_Departments_module_css__WEBPACK_IMPORTED_MODULE_9___default().root)}`,
-                        children: EventsLists.length > 0 ? EventsLists.map((val)=>{
-                            return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Col, {
-                                xs: 12,
-                                sm: 6,
-                                md: 6,
-                                lg: 4,
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_EventsCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                    className: (_Departments_Departments_module_css__WEBPACK_IMPORTED_MODULE_9___default().Col),
-                                    link: val.ELink,
-                                    date: val.EDate,
-                                    Photos: val.EPhotos,
-                                    paragraph: val.EParagraph,
-                                    title: val.ETitle,
-                                    text2: val.EBrief,
-                                    src: val.EID,
-                                    img: `/events/${val.ECover} `
-                                })
-                            }, val.EID);
-                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {})
-                    })
-                ]
+            Loaded === true ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Row, {
+                    className: `g-4 ${(_Departments_Departments_module_css__WEBPACK_IMPORTED_MODULE_9___default().root)}`,
+                    children: EventsLists.length > 0 ? EventsLists.map((val)=>{
+                        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Col, {
+                            xs: 12,
+                            sm: 6,
+                            md: 6,
+                            lg: 4,
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_EventsCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                className: (_Departments_Departments_module_css__WEBPACK_IMPORTED_MODULE_9___default().Col),
+                                link: val.ELink,
+                                date: val.EDate,
+                                Photos: val.EPhotos,
+                                paragraph: val.EParagraph,
+                                title: val.ETitle,
+                                text2: val.EBrief,
+                                src: val.EID,
+                                img: `/events/${val.ECover} `
+                            })
+                        }, val.EID);
+                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {})
+                })
             }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ClipLoader_Spinner__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {})
         ]
     });

@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/X-hgjnAkVJe1oZ9eVnuvO/_buildManifest.js",
-    "static/X-hgjnAkVJe1oZ9eVnuvO/_ssgManifest.js",
-    "static/X-hgjnAkVJe1oZ9eVnuvO/_middlewareManifest.js"
+    "static/R8ktXhdQmZ5frzd9m6F9E/_buildManifest.js",
+    "static/R8ktXhdQmZ5frzd9m6F9E/_ssgManifest.js",
+    "static/R8ktXhdQmZ5frzd9m6F9E/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -71,7 +71,7 @@
       "static/chunks/653-7b003dde8993ec50.js",
       "static/chunks/679-48a57e3b1e96ae0a.js",
       "static/css/b49bae105525614c.css",
-      "static/chunks/pages/Events-5d10fd48b9aed4c0.js"
+      "static/chunks/pages/Events-6a6a235e502f8f79.js"
     ],
     "/Events/EventsCard": [
       "static/chunks/webpack-5752944655d749a0.js",
@@ -91,7 +91,7 @@
       "static/chunks/679-48a57e3b1e96ae0a.js",
       "static/chunks/244-ff21991666ba9e43.js",
       "static/css/0c7a1f868809341c.css",
-      "static/chunks/pages/Events/[id]-68df945176468754.js"
+      "static/chunks/pages/Events/[id]-c34df815a1d57c50.js"
     ],
     "/Events/banner": [
       "static/chunks/webpack-5752944655d749a0.js",

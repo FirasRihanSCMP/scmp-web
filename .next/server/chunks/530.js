@@ -102,7 +102,7 @@ function EventsCard(props) {
         })
     }, props.key);
 };
-{}{}
+
 
 /***/ })
 
