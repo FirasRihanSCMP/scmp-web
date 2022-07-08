@@ -9,8 +9,6 @@ export default function Step7({formData, setFormData, data}) {
   const [isLoaded,setIsLoaded]=useState(false)
   
    useEffect(() => {
-
-  /*   console.log(JSON.parse(data[0].type)) */
     const filtering=  (arr)=>{
       setResults(arr.filter(function (el) { return el.StepN ===7 }));
       setIsLoaded(true)
