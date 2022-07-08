@@ -75,7 +75,7 @@ function CarouselScmp(props) {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
                                     priority: true,
                                     placeholder: "blur",
-                                    blurDataURL: "/" + img.img,
+                                    blurDataURL: "/imgs/" + img.img,
                                     loading: "eager",
                                     src: "/imgs/" + img.img,
                                     className: `d-block w-100 ${(_carouselSCMP_module_css__WEBPACK_IMPORTED_MODULE_6___default().img)}`,
@@ -92,7 +92,7 @@ function CarouselScmp(props) {
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
                             priority: true,
                             placeholder: "blur",
-                            blurDataURL: "/" + img.img,
+                            blurDataURL: "/imgs/" + img.img,
                             loading: "eager",
                             src: "/imgs/" + img.img,
                             className: `d-block w-100 ${(_carouselSCMP_module_css__WEBPACK_IMPORTED_MODULE_6___default().img)}`,

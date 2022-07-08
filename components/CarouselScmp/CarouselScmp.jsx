@@ -16,7 +16,7 @@ export default function CarouselScmp(props) {
                             <Image
                                 priority
                                 placeholder="blur"
-                                blurDataURL={'/' + img.img}
+                                blurDataURL={'/imgs/' + img.img}
                                 loading="eager"
                                 src={"/imgs/" + img.img}
                                 className={`d-block w-100 ${stylesCarousel.img}`}
@@ -26,7 +26,7 @@ export default function CarouselScmp(props) {
                             <Image
                                 priority
                                 placeholder="blur"
-                                blurDataURL={'/' + img.img}
+                                blurDataURL={'/imgs/' + img.img}
                                 loading="eager"
                                 src={"/imgs/" + img.img}
                                 className={`d-block w-100 ${stylesCarousel.img}`}
