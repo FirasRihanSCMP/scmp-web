@@ -17,7 +17,7 @@ export default function EventsCard(props) {
             <Image
               placeholder="blur"
               blurDataURL={'/imgs' + props.img}
-              loading='eager'
+              /* loading='eager' */
               className={stylesDepCard.cardImage}
               alt=''
               layout="fill"

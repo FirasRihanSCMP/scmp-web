@@ -108,8 +108,7 @@ function paragraph(props) {
                             priority: true,
                             placeholder: "blur",
                             blurDataURL: "/" + props.img,
-                            loading: "eager",
-                            className: (_paragraph_module_css__WEBPACK_IMPORTED_MODULE_5___default().img),
+                            /* loading="eager" */ className: (_paragraph_module_css__WEBPACK_IMPORTED_MODULE_5___default().img),
                             src: "/" + props.img,
                             alt: "",
                             layout: "fill"

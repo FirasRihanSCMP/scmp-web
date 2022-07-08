@@ -15,8 +15,8 @@ export default function CarouselScmp(props) {
                         {img.link ? <div className={stylesCarousel.ImgCont} style={{ height: `${props.style}vw` }}> <Link href={`/${img.link}`}>
                             <Image
                                 priority
-                                placeholder="blur"
-                                blurDataURL={'/imgs/' + img.img}
+                                /* placeholder="blur"
+                                blurDataURL={'/imgs/' + img.img} */
                                 loading="eager"
                                 src={"/imgs/" + img.img}
                                 className={`d-block w-100 ${stylesCarousel.img}`}
@@ -25,8 +25,8 @@ export default function CarouselScmp(props) {
                             /></Link></div> : <div style={{ height: `${props.style}vw` }} className={stylesCarousel.ImgCont}>
                             <Image
                                 priority
-                                placeholder="blur"
-                                blurDataURL={'/imgs/' + img.img}
+                               /*  placeholder="blur"
+                                blurDataURL={'/imgs/' + img.img} */
                                 loading="eager"
                                 src={"/imgs/" + img.img}
                                 className={`d-block w-100 ${stylesCarousel.img}`}

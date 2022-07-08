@@ -38,8 +38,7 @@ function DepartmentCard(props) {
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                         href: "/Departments/" + props.src,
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                            loading: "eager",
-                            className: (_FirstCards_firstcards_module_css__WEBPACK_IMPORTED_MODULE_5___default().cardImage),
+                            /* loading="eager" */ className: (_FirstCards_firstcards_module_css__WEBPACK_IMPORTED_MODULE_5___default().cardImage),
                             alt: "",
                             layout: "fill",
                             src: "/imgs/" + props.img

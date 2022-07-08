@@ -73,8 +73,7 @@ function EventsCard(props) {
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
                             placeholder: "blur",
                             blurDataURL: "/imgs" + props.img,
-                            loading: "eager",
-                            className: (_components_FirstCards_firstcards_module_css__WEBPACK_IMPORTED_MODULE_6___default().cardImage),
+                            /* loading='eager' */ className: (_components_FirstCards_firstcards_module_css__WEBPACK_IMPORTED_MODULE_6___default().cardImage),
                             alt: "",
                             layout: "fill",
                             src: "/imgs" + props.img

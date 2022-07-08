@@ -21,7 +21,7 @@ export default function paragraph(props) {
           priority
           placeholder="blur"
           blurDataURL={'/'+props.img}
-            loading="eager"
+            /* loading="eager" */
             className={stylesParagraph.img}
             src={'/' + props.img}
             alt=""

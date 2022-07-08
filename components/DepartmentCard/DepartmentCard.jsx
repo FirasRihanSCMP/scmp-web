@@ -9,7 +9,7 @@ export default function DepartmentCard(props) {
   return (
     <div>
       <Card className={stylesDepCard.cardsbody}>
-        <div className={stylesDepCard.ImageCont}><Link href={"/Departments/" + props.src}><Image loading="eager" className={stylesDepCard.cardImage} alt='' layout="fill" src={"/imgs/" + props.img} />
+        <div className={stylesDepCard.ImageCont}><Link href={"/Departments/" + props.src}><Image /* loading="eager" */ className={stylesDepCard.cardImage} alt='' layout="fill" src={"/imgs/" + props.img} />
         </Link></div>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>

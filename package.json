@@ -11,6 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
+    "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
@@ -35,8 +36,7 @@
     "react-switch": "^7.0.0",
     "react-toastify": "^9.0.5",
     "react-youtube": "^9.0.2",
-    "sassy-datepicker": "^0.8.0",
-    "sharp": "^0.30.7"
+    "sassy-datepicker": "^0.8.0"
   },
   "devDependencies": {
     "eslint": "8.18.0",
