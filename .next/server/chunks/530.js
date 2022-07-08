@@ -62,7 +62,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function EventsCard(props) {
-    console.log(props);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Card, {
             className: (_components_FirstCards_firstcards_module_css__WEBPACK_IMPORTED_MODULE_6___default().cardsbody),
