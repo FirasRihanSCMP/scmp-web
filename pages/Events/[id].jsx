@@ -28,7 +28,7 @@ if(id){
   await axios
     .post("https://www.scmp-lb.com/api/SeperateEvent", { EID: id })
     .then((response) => {
-      console.log('okay')
+
       if (response.data === "not found") {
         router.replace('/Events')
       }

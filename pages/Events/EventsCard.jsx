@@ -6,7 +6,7 @@ import stylesEventCard from "./EventsCard.module.css"
 import stylesDepCard from "../../components/FirstCards/firstcards.module.css";
 import Image from 'next/image'
 export default function EventsCard(props) {
-  console.log(props)
+
   return (
     <div key={props.key}>
 
