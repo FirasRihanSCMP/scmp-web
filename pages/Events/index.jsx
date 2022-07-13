@@ -38,6 +38,7 @@ export default function Events(props) {
       title='Events - Scientific Center For Manufacturing And Production'
       description='Events - Scientific Center For Manufacturing And Production'
       />
+        <p className={stylesDepPage.departmentsTitle}>Events</p>
     { Loaded===true ?  
       <div>
   <Row className={`g-4 ${stylesDepPage.root}`}>

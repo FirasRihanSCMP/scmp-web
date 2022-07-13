@@ -15,11 +15,8 @@ export default function EventsCard(props) {
         <div className={stylesDepCard.ImageCont}>
           <Link href={`/Events/${props.src}`}>
             <Image
-              placeholder="blur"
-              blurDataURL={'/imgs' + props.img}
-              /* loading='eager' */
               className={stylesDepCard.cardImage}
-              alt=''
+              alt={props.title}
               layout="fill"
               src={"/imgs" + props.img}
 
