@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888,10];
 exports.modules = {
 
-/***/ 2742:
+/***/ 5593:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -354,6 +354,9 @@ var external_next_seo_ = __webpack_require__(6641);
 ;// CONCATENATED MODULE: external "next/head"
 const head_namespaceObject = require("next/head");
 var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
+;// CONCATENATED MODULE: external "next/script"
+const script_namespaceObject = require("next/script");
+var script_default = /*#__PURE__*/__webpack_require__.n(script_namespaceObject);
 ;// CONCATENATED MODULE: ./pages/_app.js
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -371,12 +374,22 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 function MyApp({
   Component,
   pageProps
 }) {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    children: [/*#__PURE__*/jsx_runtime_.jsx((head_default()), {
+    children: [/*#__PURE__*/jsx_runtime_.jsx((script_default()), {
+      strategy: "lazyOnload",
+      src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`
+    }), /*#__PURE__*/jsx_runtime_.jsx((script_default()), {
+      strategy: "lazyOnload",
+      children: `window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag("js", new Date); 
+          gtag("config", ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS})`
+    }), /*#__PURE__*/jsx_runtime_.jsx((head_default()), {
       children: /*#__PURE__*/jsx_runtime_.jsx("link", {
         rel: "icon",
         href: "/scmp-logo.svg"
@@ -634,7 +647,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [922,664], () => (__webpack_exec__(2742)));
+var __webpack_exports__ = __webpack_require__.X(0, [922,664], () => (__webpack_exec__(5593)));
 module.exports = __webpack_exports__;
 
 })();

@@ -38,9 +38,9 @@ export default function Events(props) {
       title='Events - Scientific Center For Manufacturing And Production'
       description='Events - Scientific Center For Manufacturing And Production'
       />
-        <p className={stylesDepPage.departmentsTitle}>Events</p>
     { Loaded===true ?  
-      <div>
+      <div>        <p className={stylesDepPage.departmentsTitle}>Events</p>
+
   <Row className={`g-4 ${stylesDepPage.root}`}>
 
     {EventsLists.length>0? EventsLists.map((val)=>{return <Col key={val.EID} xs={12} sm={6} md={6} lg={4}>
