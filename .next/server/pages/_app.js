@@ -382,13 +382,13 @@ function MyApp({
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     children: [/*#__PURE__*/jsx_runtime_.jsx((script_default()), {
       strategy: "lazyOnload",
-      src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`
+      src: `https://www.googletagmanager.com/gtag/js?id=${"G-YMWJKXJNNT"}`
     }), /*#__PURE__*/jsx_runtime_.jsx((script_default()), {
       strategy: "lazyOnload",
       children: `window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
-          gtag("js", new Date); 
-          gtag("config", ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS})`
+          gtag("js", new Date()); 
+          gtag("config", "${"G-YMWJKXJNNT"}")`
     }), /*#__PURE__*/jsx_runtime_.jsx((head_default()), {
       children: /*#__PURE__*/jsx_runtime_.jsx("link", {
         rel: "icon",

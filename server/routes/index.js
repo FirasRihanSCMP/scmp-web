@@ -191,8 +191,6 @@ function routes(app) {
     
     router.post("/Login", async (req, res) => {
       try {
-    
-       /*  const  data = req.body;*/
         const { username, password }=req.body 
     
         const U_NameModified = username.toLowerCase().replace(/[&\/\\#,+()$~%'":*?<>{}]/g, "");
@@ -235,7 +233,46 @@ function routes(app) {
       }
     })
 
+    router.post("/register", async (req, res) => {
+    const {user,pwd} = req.body;
+    if(!user || !pwd) return res.status(400).json({'message':'Username and password are required.'});
+    const sql= 'SELECT * FROM `users` WHERE `U_Name`= (?)';
+    
+    try {
+      await db.query(sql, [user], async (err, result) => {
+      
+        if (result?.length>0) { res.sendStatus(409) }
+        else { 
+          try {
+            const hashedPwd=await bcrypt.hash(pwd, 10);
+           
+            const insert='INSERT INTO `users`(`U_Name`, `U_Hash`, `admin`, `auth`) VALUES (?,?,?,?)'
+             db.query(insert, [user,hashedPwd,0,'user'], (err, result) => {
+            
+              if(err){
+                console.log(err)
+                res.status(500).json({'message': err})
+              }
+              else{
+                console.log("ok!")
+                res.sendStatus(200)
+              }
+            })
+         
+          } catch (error) {
+            res.status(500).json({'message': error.message})
 
+          }
+
+         }
+      });
+    } catch (error) {
+      res.status(500).json({'message': error.message})
+    } 
+    
+    });
+  
+  
   return router;
 };
 

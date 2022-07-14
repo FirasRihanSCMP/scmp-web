@@ -7,8 +7,11 @@ color: rgb(223, 223, 223);}
     width: 20vw;
     height: 10vw !important;
     margin-bottom: 10%;
+    transition: 0.4s transform ease-in-out;
 }
-
+#gmap_canvas:hover{
+    transform:scale(1.1);
+}
 #facebook{
     margin-right: 10px;
     fill: #ffc41d;
