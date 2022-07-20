@@ -1,18 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/AboutUs": "pages/AboutUs.html",
-  "/Auth": "pages/Auth.html",
-  "/AboutUs/[id]": "pages/AboutUs/[id].html",
-  "/Departments/[id]": "pages/Departments/[id].html",
-  "/Departments": "pages/Departments.html",
-  "/Events/banner": "pages/Events/banner.html",
-  "/Register": "pages/Register.html",
-  "/SWS": "pages/SWS.html",
-  "/": "pages/index.html",
-  "/Events": "pages/Events.html",
-  "/Events/EventsCard": "pages/Events/EventsCard.html",
-  "/Events/[id]": "pages/Events/[id].html",
-  "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js"
 }

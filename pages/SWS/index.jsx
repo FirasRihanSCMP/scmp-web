@@ -62,7 +62,16 @@ export default function Sws() {
     <div className={styleSws.firstParagraph}>  
    <div className={styleSws.AllPhotos} >All photos of the event are available in the following <a className={styleSws.PhotoLink} href="https://drive.google.com/drive/folders/1-DIS0DJeLuYoSV1qNufTdy9PkQ7ej60P?usp=sharing">Link!</a>
 </div>
-      Greetings candidates!
+
+After reviewing the business models and the feasibility studies, and consulting with specialized scientific committees, experts and business investors, the following two projects were approved to move to the stage of manufacturing prototypes:
+<br/>
+<br/>
+<ol className={styleSws.Ol}>
+<li className={styleSws.Li}>Dental Medical Products</li>
+<li className={styleSws.Li}>3dLife</li>
+</ol>
+Best of luck for all!
+    {/*   Greetings candidates!
     <br/><br/>
     <div className={styleSws.Indent}>
 First of all, we would like to thank each participant that have joined us in our first Startup Weekend Support SWS-2022 event which was held on the 28th of May in cooperation with the Lebanese University. 
@@ -91,7 +100,7 @@ After presenting these ideas in front of specialized committees composed of acad
 The above-mentioned ideas that qualified for the semi-finals will be notified later on regarding the next steps.
 
 As for the ideas that were not selected, they will remain with us in a list of ideas that will be presented to different businessmen and financiers in a frequent manner in hopes of finding someone interested in incubating them in order to grant you further opportunities and help you grow.
-<br/>
+<br/> */}
 </div>
 {/*    
   
